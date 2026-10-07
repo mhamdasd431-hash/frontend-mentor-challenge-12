@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ <header>
+  <div class="header-left">
+    <button class="menu-toggle">
+      <img src="images/icon-menu.svg" alt="Menu">
+    </button>
+    
+    <img src="images/logo.svg" alt="sneakers" class="logo-img">
+
+    <nav class="navbar">
+      <button class="close-menu">
+        <img src="images/icon-close.svg" alt="Close">
+      </button>
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+  <div class="cart-dropdown">
+  <h4>Cart</h4>
+  <div class="cart-body">
+    <p class="empty-msg">Your cart is empty.</p>
+  </div>
+</div>
+  <div class="user-actions">
+    <button class="cart-btn">
+      <img src="images/icon-cart.svg" alt="Cart">
+      <span class="cart-count">0</span>
+    </button>
+    <img src="images/image-avatar.png" alt="Avatar" class="avatar">
+  </div>
+</header>
+<div class="overlay"></div>
+<main>
+  <section class="gallery-section">
+    <div class="main-image-container">
+      <img src="images/image-product-1.jpg" alt="Product" class="main-img">
+    </div>
+    <div class="thumbnails">
+      <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail 1" class="thumb active">
+      <img src="images/image-product-2-thumbnail.jpg" alt="Thumbnail 2" class="thumb">
+      <img src="images/image-product-3-thumbnail.jpg" alt="Thumbnail 3" class="thumb">
+      <img src="images/image-product-4-thumbnail.jpg" alt="Thumbnail 4" class="thumb">
+    </div>
+  </section>
+
+  <section class="product-details">
+    <p class="company-name">Sneaker Company</p>
+    <h1>Fall Limited Edition Sneakers</h1>
+    <p class="description">
+      These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </p>
+
+    <div class="price-box">
+      <div class="price-container">
+        <span class="current-price">$125.00</span>
+        <span class="discount-badge">50%</span>
+      </div>
+      <span class="original-price">$250.00</span>
+    </div>
+
+    <div class="purchase-section">
+      <div class="quantity-counter">
+        <button class="minus-btn"><img src="images/icon-minus.svg" alt="minus"></button>
+        <span class="count">0</span>
+        <button class="plus-btn"><img src="images/icon-plus.svg" alt="plus"></button>
+      </div>
+      <button class="add-to-cart-btn">
+        <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C5.585 16.965 6.597 17.2 7.618 17.2h10.623a.896.896 0 1 0 0-1.792H7.619c-.463 0-.91-.164-1.25-.465-.37-.32-.584-.799-.618-1.284h11.96a.896.896 0 0 0 .888-.772l1.504-8.024-.001-.002c.036-.185.063-.374.063-.564 0-.896-.732-1.625-1.631-1.625zM17.46 14.135H7.555L6.345 3.32h13.25l-2.135 10.815zM8.996 18.991c-.96 0-1.74.78-1.74 1.74s.78 1.74 1.74 1.74 1.74-.78 1.74-1.74-.78-1.74-1.74-1.74zM18.491 18.991c-.96 0-1.74.78-1.74 1.74s.78 1.74 1.74 1.74 1.74-.78 1.74-1.74-.78-1.74-1.74-1.74z" fill="#FFF" fill-rule="nonzero"/></svg>
+        Add to cart
+      </button>
+    </div>
+  </section>
+</main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  <script src="index.js" defer></script>
+</body>
+</html>
